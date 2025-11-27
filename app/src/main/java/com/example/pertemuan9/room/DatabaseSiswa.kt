@@ -19,7 +19,7 @@ abstract class DatabaseSiswa : RoomDatabase() {
                 Room.databaseBuilder(
                     context,
                     DatabaseSiswa::class.java,
-                    "siswadb" // Nama database di dalam HP
+                    "siswadb"
                 )
                     .build()
                     .also { Instance = it }
