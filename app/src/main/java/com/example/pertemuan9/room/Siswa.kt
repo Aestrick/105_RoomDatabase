@@ -1,4 +1,4 @@
-package com.example.myroomsatu.room // Sesuaikan dengan nama package project kamu jika berbeda
+package com.example.pertemuan9.room
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
