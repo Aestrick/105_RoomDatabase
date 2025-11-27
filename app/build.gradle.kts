@@ -8,12 +8,12 @@ plugins {
 
 android {
     namespace = "com.example.pertemuan9" // Sesuaikan jika nama projectmu beda
-    compileSdk = 34 // Sesuaikan dengan versi SDK kamu
+    compileSdk = 35 // Sesuaikan dengan versi SDK kamu
 
     defaultConfig {
         applicationId = "com.example.pertemuan9"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
