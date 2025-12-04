@@ -30,7 +30,7 @@ import com.example.pertemuan9.viewmodel.provider.PenyediaViewModel
 @Composable
 fun HomeScreen(
     navigateToItemEntry: () -> Unit,
-    onDetailClick: (Int) -> Unit = {}, // Tambahkan parameter ini
+    onDetailClick: (Int) -> Unit = {},
     modifier: Modifier = Modifier,
     viewModel: HomeViewModel = viewModel(factory = PenyediaViewModel.Factory)
 ){
@@ -64,7 +64,7 @@ fun HomeScreen(
             modifier = Modifier
                 .padding(innerPadding)
                 .fillMaxSize(),
-            onSiswaClick = onDetailClick // Pass ke BodyHome
+            onSiswaClick = onDetailClick
         )
     }
 }
@@ -72,7 +72,7 @@ fun HomeScreen(
 @Composable
 fun BodyHome(
     itemSiswa: List<Siswa>,
-    onSiswaClick: (Int) -> Unit, // Tambahkan parameter ini
+    onSiswaClick: (Int) -> Unit,
     modifier: Modifier=Modifier
 ){
     Column(
@@ -88,7 +88,7 @@ fun BodyHome(
         } else {
             ListSiswa(
                 itemSiswa = itemSiswa,
-                onSiswaClick = onSiswaClick, // Pass ke ListSiswa
+                onSiswaClick = onSiswaClick,
                 modifier = Modifier.padding(horizontal = dimensionResource(id = R.dimen.padding_small))
             )
         }
@@ -98,7 +98,7 @@ fun BodyHome(
 @Composable
 fun ListSiswa(
     itemSiswa : List<Siswa>,
-    onSiswaClick: (Int) -> Unit, // Tambahkan parameter ini
+    onSiswaClick: (Int) -> Unit,
     modifier: Modifier=Modifier
 ){
     LazyColumn(modifier = Modifier){
@@ -107,13 +107,12 @@ fun ListSiswa(
                 siswa = person,
                 modifier = Modifier
                     .padding(dimensionResource(id = R.dimen.padding_small))
-                    .clickable { onSiswaClick(person.id) } // Tambahkan aksi klik
+                    .clickable { onSiswaClick(person.id) }
             )
         }
     }
 }
 
-// DataSiswa sama seperti sebelumnya
 @Composable
 fun DataSiswa(
     siswa: Siswa,
