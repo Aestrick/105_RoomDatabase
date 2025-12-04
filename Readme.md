@@ -21,7 +21,7 @@ Formulir untuk menambahkan data siswa baru. Validasi input aktif untuk mencegah 
 ### 3. Detail Data (Read)
 Menampilkan rincian informasi siswa yang dipilih dari daftar.
 <br>
-<img width="470" height="811" alt="screenshot_form png" src="https://github.com/user-attachments/assets/101c0c25-1d06-47d2-bb06-cc8d6c26ad93" />
+<img width="487" height="965" alt="Screenshot 2025-12-04 163556" src="https://github.com/user-attachments/assets/7e90dccd-4b5e-4b0e-ba8b-780dddd06118" />
 
 ### 4. Hapus Data (Delete)
 Fitur untuk menghapus data siswa dengan konfirmasi dialog untuk mencegah kesalahan hapus.
