@@ -31,7 +31,6 @@ class DetailViewModel(
             )
 
     suspend fun deleteItem() {
-        // Pastikan toSiswa() ter-import dari EntryViewModel
         repositoriSiswa.deleteSiswa(uiState.value.detailSiswa.toSiswa())
     }
 
