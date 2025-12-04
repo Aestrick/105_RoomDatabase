@@ -16,7 +16,6 @@ class DetailViewModel(
     private val repositoriSiswa: RepositoriSiswa
 ) : ViewModel() {
 
-    // Ambil ID dari argument navigasi
     private val siswaId: Int = checkNotNull(savedStateHandle[DestinasiDetail.itemIdArg])
 
     val uiState: StateFlow<ItemDetailsUiState> =
